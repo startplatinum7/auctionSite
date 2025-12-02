@@ -11,8 +11,15 @@
   align-items: center;
   border-bottom: 1px solid gray;
   padding: 0.5rem;
+  display: flex;
   margin: 0.25rem 0;
 }
+.price {
+  width: 80%;
+  text-align: right;
+  gap: 0 0.5rem;
+}
+
 .milestones {
   gap: 0 0.75rem;
   height: 600px;

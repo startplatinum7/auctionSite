@@ -271,24 +271,24 @@ export function HomePageActual() {
               <FaBookOpenReader className="inline text-[#6cb269] text-[24px] " />
               <p className="text-2xl">Customs Exchange Rate</p>
             </div>
-            <div>
-              <div className="grid-cols-6 grid currency">
-                <div className="col-span-1 flag">
+            <div className="font-bold">
+              <div className="currency">
+                <div className="flag">
                   <span className="fi fi-ae"></span>
                 </div>
-                <div className="col-span-4">AED</div>
+                <div>AED</div>
                 <div className="price">418.25</div>
               </div>
 
-              <div className="grid-cols-6 grid currency">
-                <div className="col-span-1 flag">
+              <div className="currency">
+                <div className="flag">
                   <span className="fi fi-eu"></span>
                 </div>
-                <div className="col-span-4">EUR</div>
+                <div>EUR</div>
                 <div className="price">1674.17</div>
               </div>
 
-              <div className="grid-cols-6 grid currency">
+              <div className="currency">
                 <div className="col-span-1 flag">
                   <span className="fi fi-gb"></span>
                 </div>
