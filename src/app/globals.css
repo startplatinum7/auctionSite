@@ -2,14 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-.photo{
-    -webkit-clip-path: polygon(-3.5% 0, 100% 0, 100% 100%, 26% 100%);
-    clip-path: polygon(-3.5% 0, 100% 0, 100% 100%, 26% 100%);
+.photo {
+  -webkit-clip-path: polygon(-3.5% 0, 100% 0, 100% 100%, 26% 100%);
+  clip-path: polygon(-3.5% 0, 100% 0, 100% 100%, 26% 100%);
 }
 
-.currency{
-    align-items: center;
-    border-bottom: 1px solid gray;
-    padding: 0.5rem;
-    margin: 0.25rem 0
+.currency {
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+.milestones {
+  gap: 0 0.75rem;
+  height: 600px;
+  color: white;
+  align-items: center;
+  padding: 2rem;
+  /*background-image: url('../assets/kbd-gavel.jpg');*/
+  background-color: rgba(0, 0, 0, 0.356);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.requirement {
+  display: grid;
+  grid-template-columns: 64px auto;
+  margin: 0.25rem 0;
+}
+
+.milestone {
+  padding: 0.5rem;
+  text-align: center;
 }

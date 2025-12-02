@@ -1,5 +1,6 @@
 "use client";
 import { FaUser } from "react-icons/fa";
+import Link from "next/link";
 import Image from "next/image";
 import logo from "./../assets/header_1.png";
 import customs from "./../assets/customs.png";
@@ -108,15 +109,18 @@ export function HomePageActual() {
             </div>
           </div>
 
-           <div className={`grid-cols-10 hover-nav-support absolute left-0 z-20 w-full bg-white p-8 ${activeHover == 'support' ? 'grid' : "hidden"}`} style={{
-              bottom: '-7.5rem',
-            }}  >
-              <div className="grid col-span-2 text-[#4b6076]">
-                <a className="block">Help Desk</a>
-                <a className="block">Trouble Ticket</a>
-                <a className="block">PAAR Consignment Support</a>
-              </div>
+          <div
+            className={`grid-cols-10 hover-nav-support absolute left-0 z-20 w-full bg-white p-8 ${activeHover == "support" ? "grid" : "hidden"}`}
+            style={{
+              bottom: "-7.5rem",
+            }}
+          >
+            <div className="grid col-span-2 text-[#4b6076]">
+              <a className="block">Help Desk</a>
+              <a className="block">Trouble Ticket</a>
+              <a className="block">PAAR Consignment Support</a>
             </div>
+          </div>
 
           <div className="flex items-center">
             <Image
@@ -217,7 +221,9 @@ export function HomePageActual() {
             <p>
               To log in, all that is required is a REVALIDATION OF YOUR CURRENT
               CREDENTIALS. This can be done at:{" "}
-              <span className="text-blue-700">== &gt;Here </span>
+              <Link href={"/auction"} target="_blank" className="text-blue-700">
+                == &gt;Here{" "}
+              </Link>
             </p>
             <p>
               <input type="checkbox" name="showAgain" id="showAgain" />
