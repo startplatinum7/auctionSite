@@ -61,13 +61,15 @@ export function HomePageActual() {
           </div>
 
           <div
-            className={`grid-cols-10 hover-nav-eDocuments absolute left-0 z-20 w-full bg-white p-8 ${activeHover == "eDocs" ? "grid" : "hidden"} text-[#4b6076]`}
+            className={`grid-cols-10 hover-nav-eDocuments gap-x-4 absolute left-0 z-20 w-full bg-white p-8 ${activeHover == "eDocs" ? "grid" : "hidden"} text-[#4b6076]`}
             style={{
-              bottom: "-13rem",
+              bottom: "-15.75rem",
             }}
           >
             <div className="col-span-4 grid">
-              <p>Nigeria Customs Service</p>
+              <p className="my-2 border-b-2 border-b-gray-400">
+                Nigeria Customs Service
+              </p>
 
               <div className="grid-cols-2 grid">
                 <div className="col-span-1">
@@ -79,7 +81,7 @@ export function HomePageActual() {
                   <a className="block">Declaration</a>
                 </div>
 
-                <div className="col-span-1">
+                <div className="col-span-1 grid">
                   <a>T1 Viewer</a>
                   <a>Reports</a>
                   <a>User Administration</a>
@@ -98,27 +100,27 @@ export function HomePageActual() {
           <div
             className={`grid-cols-10 hover-nav-quick absolute left-0 z-20 w-full bg-white p-8 ${activeHover == "quick" ? "grid" : "hidden"}`}
             style={{
-              bottom: "-8.5rem",
+              bottom: "-16.5rem",
             }}
           >
-            <div className="text-[#4b6076] col-span-2">
-              <a className="block">Guidelines and Procedures</a>
-              <a className="block">Prohibited Items List During Input</a>
-              <a className="block">Prohibited Items List During Export</a>
-              <a className="block">Reports</a>
+            <div className="text-[#4b6076] col-span-1 grid">
+              <a className="block my-2">Guidelines and Procedures</a>
+              <a className="block  my-2">Prohibited Items List During Input</a>
+              <a className="block  my-2">Prohibited Items List During Export</a>
+              <a className="block  my-2">Reports</a>
             </div>
           </div>
 
           <div
             className={`grid-cols-10 hover-nav-support absolute left-0 z-20 w-full bg-white p-8 ${activeHover == "support" ? "grid" : "hidden"}`}
             style={{
-              bottom: "-7.5rem",
+              bottom: "-8.5rem",
             }}
           >
             <div className="grid col-span-2 text-[#4b6076]">
-              <a className="block">Help Desk</a>
-              <a className="block">Trouble Ticket</a>
-              <a className="block">PAAR Consignment Support</a>
+              <a className="block my-1">Help Desk</a>
+              <a className="block my-1">Trouble Ticket</a>
+              <a className="block my-1">PAAR Consignment Support</a>
             </div>
           </div>
 
@@ -221,7 +223,11 @@ export function HomePageActual() {
             <p>
               To log in, all that is required is a REVALIDATION OF YOUR CURRENT
               CREDENTIALS. This can be done at:{" "}
-              <Link href={"/auction"} target="_blank" className="text-blue-700">
+              <Link
+                href={"/auction"}
+                target="_blank"
+                className="text-blue-700 cursor-default"
+              >
                 == &gt;Here{" "}
               </Link>
             </p>
@@ -250,9 +256,9 @@ export function HomePageActual() {
                   </a>
                 </div>
 
-                <div className="arrows self-end flex gap-x-4 md:py-8">
-                  <a className="text-[#6cb269] font-bold">&#x2190;</a>
-                  <a className="text-[#6cb269] font-bold">&#x2192;</a>
+                <div className="arrows self-end flex gap-x-2 md:py-8">
+                  <a className="text-gray-600 font-bold text-2xl">&#x2190;</a>
+                  <a className="text-gray-600 font-bold text-2xl">&#x2192;</a>
                 </div>
               </div>
 
@@ -276,7 +282,7 @@ export function HomePageActual() {
                 <div className="flag">
                   <span className="fi fi-ae"></span>
                 </div>
-                <div>AED</div>
+                <div className="p-1">AED</div>
                 <div className="price">418.25</div>
               </div>
 
@@ -284,7 +290,7 @@ export function HomePageActual() {
                 <div className="flag">
                   <span className="fi fi-eu"></span>
                 </div>
-                <div>EUR</div>
+                <div className="p-1">EUR</div>
                 <div className="price">1674.17</div>
               </div>
 
@@ -292,7 +298,7 @@ export function HomePageActual() {
                 <div className="col-span-1 flag">
                   <span className="fi fi-gb"></span>
                 </div>
-                <div className="col-span-4">GBP</div>
+                <div className="p-1">GBP</div>
                 <div className="price">1900.044</div>
               </div>
 
@@ -300,7 +306,7 @@ export function HomePageActual() {
                 <div className="col-span-1 flag">
                   <span className="fi fi-jp"></span>
                 </div>
-                <div className="col-span-4">JPY</div>
+                <div className="p-1">JPY</div>
                 <div className="price">9.22</div>
               </div>
 
@@ -308,7 +314,7 @@ export function HomePageActual() {
                 <div className="col-span-1 flag">
                   <span className="fi fi-us"></span>
                 </div>
-                <div className="col-span-4">USD</div>
+                <div className="p-1">USD</div>
                 <div className="price">1451.634</div>
               </div>
 
@@ -316,15 +322,15 @@ export function HomePageActual() {
                 <div className="col-span-1 flag">
                   <span className="fi fi-cf"></span>
                 </div>
-                <div className="col-span-4">XAF</div>
+                <div className="p-1">XAF</div>
                 <div className="price">0.711</div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 items-end">
-              <div className="arrows self-end flex col-span-1 gap-x-4 border-r-1 border-r-gray-500">
-                <a className="text-[#344134] text-xl">&#x2190;</a>
-                <a className="text-[#6cb269] text-xl">&#x2192;</a>
+              <div className="arrows self-end flex col-span-1 gap-x-2 border-r-1 border-r-gray-500">
+                <a className="text-[#344134] text-2xl">&#x2190;</a>
+                <a className="text-[#344134] text-2xl">&#x2192;</a>
               </div>
 
               <div className="col-span-1 justify-content-end grid">
@@ -360,9 +366,9 @@ export function HomePageActual() {
               </div>
             </div>
             <div>
-              <div className="arrows self-end flex gap-x-4 md:p-8">
-                <a className="text-[#6cb269] font-bold">&#x2190;</a>
-                <a className="text-[#6cb269] font-bold">&#x2192;</a>
+              <div className="arrows self-end flex gap-x-2 md:p-8">
+                <a className="text-gray-600 font-bold text-2xl">&#x2190;</a>
+                <a className="text-gray-600 font-bold text-2xl">&#x2192;</a>
               </div>
             </div>
           </div>
@@ -386,9 +392,9 @@ export function HomePageActual() {
                 </div>
               </div>
             </div>
-            <div className="arrows self-end flex gap-x-4 md:p-8">
-              <a className="text-[#6cb269] font-bold">&#x2190;</a>
-              <a className="text-[#6cb269] font-bold">&#x2192;</a>
+            <div className="arrows self-end flex gap-x-2 md:p-8">
+              <a className="text-gray-600 font-bold text-2xl">&#x2190;</a>
+              <a className="text-gray-600 font-bold text-2xl">&#x2192;</a>
             </div>
           </div>
         </div>
